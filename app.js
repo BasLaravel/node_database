@@ -33,7 +33,7 @@ app.get('/createpoststable', (req, res) => {
 });
 
 //add post
-app.get('/addpost/:title/:body', (req, res) => {
+app.get('/api/addpost/:title/:body', (req, res) => {
     let post = {title: `${req.params.title}`, body:`${req.params.body}`};
     let sql  = 'INSERT INTO posts SET ?';
     let query = db.query(sql,post,(err, result) => {
@@ -45,7 +45,7 @@ app.get('/addpost/:title/:body', (req, res) => {
 
 
 //get all posts
-app.get('/getposts', (req, res) => {
+app.get('/api/getposts', (req, res) => {
     let sql  = 'SELECT * FROM posts';
     let query = db.query(sql, (err, results) => {
         if(err) throw err;
@@ -55,7 +55,7 @@ app.get('/getposts', (req, res) => {
 })
 
 //select 1 post
-app.get('/getpost/:id', (req, res) => {
+app.get('/api/getpost/:id', (req, res) => {
     let sql  = `SELECT * FROM posts WHERE id = ${req.params.id}`;
     let query = db.query(sql, (err, result) => {
         if(err) throw err;
@@ -65,7 +65,7 @@ app.get('/getpost/:id', (req, res) => {
 })
 
 //update post
-app.get('/updatepost/:id', (req, res) => {
+app.get('/api/updatepost/:id', (req, res) => {
     let newTitle = 'Updated title';
     let sql  = `UPDATE posts SET title ='${newTitle}'
      WHERE id = ${req.params.id}`;
@@ -77,7 +77,7 @@ app.get('/updatepost/:id', (req, res) => {
 })
 
 //delete post
-app.get('/deletepost/:id', (req, res) => {
+app.get('/api/deletepost/:id', (req, res) => {
     let sql  = `DELETE FROM posts WHERE id = ${req.params.id}`;
     let query = db.query(sql, (err, result) => {
         if(err) throw err;
