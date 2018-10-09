@@ -1,0 +1,122 @@
+[
+  {
+    "id": "9200000097093002",
+    "ean": "4008948093012",
+    "gpc": "sto",
+    "title": "Jever Fun One-Way - 33 cl",
+    "specsTag": "Jever",
+    "summary": "Alcoholvrij",
+    "rating": 0,
+    "shortDescription": "Pilsener - Heerlijk fris en kruidig, zonder alcohol",
+    "longDescription": "Pilsener - Heerlijk fris en kruidig, zonder alcohol",
+    "urls": [
+      {
+        "key": "DESKTOP",
+        "value": "https://www.bol.com/nl/p/jever-fun-one-way-33-cl/9200000097093002"
+      },
+      {
+        "key": "MOBILE",
+        "value": "https://www.bol.com/nl/p/jever-fun-one-way-33-cl/9200000097093002"
+      }
+    ],
+    "images": [
+      {
+        "type": "IMAGE",
+        "key": "XS",
+        "url": "https://s.s-bol.com/imgbase0/imagebase3/mini/FC/2/0/0/3/9200000097093002.jpg"
+      },
+      {
+        "type": "IMAGE",
+        "key": "S",
+        "url": "https://s.s-bol.com/imgbase0/imagebase3/tout/FC/2/0/0/3/9200000097093002.jpg"
+      },
+      {
+        "type": "IMAGE",
+        "key": "M",
+        "url": "https://s.s-bol.com/imgbase0/imagebase3/thumb/FC/2/0/0/3/9200000097093002.jpg"
+      },
+      {
+        "type": "IMAGE",
+        "key": "L",
+        "url": "https://s.s-bol.com/imgbase0/imagebase3/regular/FC/2/0/0/3/9200000097093002.jpg"
+      },
+      {
+        "type": "IMAGE",
+        "key": "XL",
+        "url": "https://s.s-bol.com/imgbase0/imagebase3/large/FC/2/0/0/3/9200000097093002.jpg"
+      },
+      {
+        "type": "IMAGE",
+        "key": "XXL",
+        "url": "https://s.s-bol.com/imgbase0/imagebase3/extralarge/FC/2/0/0/3/9200000097093002.jpg"
+      }
+    ],
+    "media": [
+      {
+        "type": "IMAGE",
+        "key": "XL",
+        "url": "https://s.s-bol.com/imgbase0/imagebase3/large/FC/2/0/0/3/9200000097093002.jpg"
+      }
+    ],
+    "offerData": {
+      "bolCom": 0,
+      "nonProfessionalSellers": 0,
+      "professionalSellers": 1,
+      "offers": [
+        {
+          "id": "1001032487292010",
+          "condition": "Nieuw",
+          "price": 6.94,
+          "availabilityCode": "-1",
+          "availabilityDescription": "1 - 2 dagen",
+          "comment": "1 - 2 dagen",
+          "seller": {
+            "id": "1393531",
+            "sellerType": "Kleinzakelijke verkoper",
+            "displayName": "Vandebrouwerij.nl",
+            "topSeller": false,
+            "logo": "https://s.s-bol.com/nl/cms/images/sellerlogos/sellerlogo_1393531.png",
+            "sellerInformation": "Vandebrouwerij.nl\n\nUnieke selectie speciaalbieren rechtstreeks van de brouwerij!",
+            "useWarrantyRepairConditions": false,
+            "registrationDate": "2018-09-24T02:00:00.000+02:00"
+          },
+          "bestOffer": true
+        }
+      ]
+    },
+    "parentCategoryPaths": [
+      {
+        "parentCategories": [
+          {
+            "id": "36080",
+            "name": "Drank"
+          }
+        ]
+      },
+      {
+        "parentCategories": [
+          {
+            "id": "36080",
+            "name": "Drank"
+          },
+          {
+            "id": "36771",
+            "name": "Bier"
+          }
+        ]
+      },
+      {
+        "parentCategories": [
+          {
+            "id": "36080",
+            "name": "Drank"
+          },
+          {
+            "id": "36779",
+            "name": "Alcoholvrij"
+          }
+        ]
+      }
+    ]
+  }
+]

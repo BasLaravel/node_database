@@ -1,6 +1,7 @@
 const express = require('express');
 const mysql = require('mysql');
-
+const axios = require('axios');
+const fs= require('fs');
 const app = express();
 
 //create connection 
@@ -85,6 +86,32 @@ app.get('/api/deletepost/:id', (req, res) => {
         res.send(result);
     })
 })
+
+
+app.get('/drinks', (req, res) => {
+    let content;
+
+    if(fs.existsSync('./drinks.json')){
+        content = fs.readFileSync('./drinks.json','utf8');
+        JSON.parse(content);
+        //res.send(`data exists on file: drinks.json<br>${content}`);
+    }else{
+        axios.get('https://api.bol.com/catalog/v4/lists/?ids=4268792077&limit=1&apikey=A1588DB3C75F426196E5C3A7A64887A9&MediaEntry=true&includeAttributes=true&format=json')
+        .then((response) => {
+        content = response.data.products;
+        fs.writeFileSync('drinks.json', JSON.stringify(content,null,2));
+       // res.send(content);
+        })
+    }
+    //console.log(content[1]);
+ 
+   res.send(`data exists on file: drinks.json<br>${content}`);
+
+
+
+})
+
+
 
 
 app.listen('3000', () => {
